@@ -1,6 +1,6 @@
 <template>
-  <with-dimensions>
-    <div slot-scope="{ width }" class="profile-card" :class="{ 'profile-card--horizontal': width > 400 }">
+  <with-dimensions v-slot="{ width }">
+    <div class="profile-card" :class="{ 'profile-card--horizontal': width > 400 }">
       <img class="profile-card-image" src="/img/toby.jpg" alt="">
       <div class="profile-card-meta">
         <div class="mb-4">
