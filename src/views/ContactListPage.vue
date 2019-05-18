@@ -1,11 +1,7 @@
 <template>
   <demo-layout>
     <div class="p-8">
-      <contact-list>
-        <template slot-scope="{ contact }">
-          {{ contact.name.first }}
-        </template>
-      </contact-list>
+      <contact-list></contact-list>
     </div>
   </demo-layout>
 </template>
