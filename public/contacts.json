@@ -14,9 +14,7 @@
     "email": "alfreda.ferreira@example.com",
     "phone": "(73) 8845-4229",
     "picture": {
-      "large": "https://randomuser.me/api/portraits/women/6.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/6.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/6.jpg"
+      "medium": "/img/contacts/6.jpg"
     }
   },
   {
@@ -34,9 +32,7 @@
     "email": "leevi.wirtanen@example.com",
     "phone": "05-212-720",
     "picture": {
-      "large": "https://randomuser.me/api/portraits/men/19.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/19.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/19.jpg"
+      "medium": "/img/contacts/19.jpg"
     }
   },
   {
@@ -54,9 +50,7 @@
     "email": "kaitlin.sutton@example.com",
     "phone": "071-796-4637",
     "picture": {
-      "large": "https://randomuser.me/api/portraits/women/2.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/2.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/2.jpg"
+      "medium": "/img/contacts/2.jpg"
     }
   },
   {
@@ -74,9 +68,7 @@
     "email": "alice.wilson@example.com",
     "phone": "937-532-8950",
     "picture": {
-      "large": "https://randomuser.me/api/portraits/women/62.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/62.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/62.jpg"
+      "medium": "/img/contacts/62.jpg"
     }
   },
   {
@@ -94,9 +86,7 @@
     "email": "etienne.roy@example.com",
     "phone": "498-395-4096",
     "picture": {
-      "large": "https://randomuser.me/api/portraits/men/4.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/4.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/4.jpg"
+      "medium": "/img/contacts/4.jpg"
     }
   }
 ]
