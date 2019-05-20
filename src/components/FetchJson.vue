@@ -22,6 +22,12 @@ export default {
         this.loading = false
       }, 500)
     })
-  }
+  },
+  // render(h) {
+  //   return this.$scopedSlots.default({
+  //     response: this.response,
+  //     loading: this.loading,
+  //   })
+  // }
 }
 </script>
