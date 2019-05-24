@@ -1,24 +1,27 @@
 <template>
-  <div class="profile-card">
-    <img class="profile-card-image" src="/img/toby.jpg" alt="">
-    <div class="profile-card-meta">
-      <div class="mb-4">
-        <p class="text-xl leading-tight">
-          Toby Flenderson
-        </p>
-        <p class="text-sm leading-tight text-gray-600">Human Resources at Dunder Mifflin</p>
-      </div>
-      <div>
-        <button class="btn btn-sm btn-pill btn-indigo-outline">Message</button>
+  <with-dimensions v-slot="{ width }">
+    <div class="profile-card" :class="{ 'profile-card--horizontal': width > 400 }">
+      <img class="profile-card-image" src="/img/toby.jpg" alt="">
+      <div class="profile-card-meta">
+        <div class="mb-4">
+          <p class="text-xl leading-tight">
+            {{ width > 500 ? 'Toby Flenderson' : 'Jim Halpert' }}
+          </p>
+          <p class="text-sm leading-tight text-gray-600">Human Resources at Dunder Mifflin</p>
+        </div>
+        <div>
+          <button class="btn btn-sm btn-pill btn-indigo-outline">Message</button>
+        </div>
       </div>
     </div>
-  </div>
+  </with-dimensions>
 </template>
 
 <script>
+import WithDimensions from "@/components/WithDimensions.vue"
 
 export default {
-  components: {},
+  components: { WithDimensions },
 }
 </script>
 

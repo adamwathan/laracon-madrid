@@ -4,7 +4,7 @@
       <div class="mx-auto mb-24" style="width: 600px">
         <input class="block w-full mb-6" type="range" min="250" max="600" v-model="width1">
         <div :style="{ 'max-width': `${width1}px` }" class="mx-auto mb-12">
-          <profile-card class="profile-card--horizontal"></profile-card>
+          <profile-card></profile-card>
         </div>
       </div>
 
@@ -21,12 +21,14 @@
 <script>
 import ProfileCard from "@/components/ProfileCard.vue"
 import DemoLayout from "@/components/DemoLayout.vue"
+import WithDimensions from "@/components/WithDimensions.vue"
 
 export default {
   name: "ProfileCardPage",
   components: {
     ProfileCard,
-    DemoLayout
+    DemoLayout,
+    WithDimensions,
   },
   data() {
     return {

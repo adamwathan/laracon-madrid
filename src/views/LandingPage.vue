@@ -13,25 +13,33 @@
             </div>
           </div>
 
-          <hero-section></hero-section>
+          <with-entered-viewport v-slot="{ entered }">
+            <hero-section class="slide-in-from-bottom" :class="{'slide-in-end': entered}"></hero-section>
+          </with-entered-viewport>
 
         </header>
         <div>
 
-          <feature-section icon="cog">
-            <template slot="title">Fully automated</template>
-            <template slot="body">Simply give us your boss's email address and we'll handle the rest. We'll even clean out your desk so you can avoid awkward confrontation.</template>
-          </feature-section>
+          <with-entered-viewport v-slot="{ entered }">
+            <feature-section icon="cog" class="slide-in-from-left" :class="{'slide-in-end': entered}">
+              <template slot="title">Fully automated</template>
+              <template slot="body">Simply give us your boss's email address and we'll handle the rest. We'll even clean out your desk so you can avoid awkward confrontation.</template>
+            </feature-section>
+          </with-entered-viewport>
 
-          <feature-section icon="lock">
-            <template slot="title">Totally anonymous</template>
-            <template slot="body">Your boss will never find out that you're the person who quit. Well until you stop showing up for work, then they'll know.</template>
-          </feature-section>
+          <with-entered-viewport v-slot="{ entered }">
+            <feature-section icon="lock" class="slide-in-from-right" :class="{'slide-in-end': entered}">
+              <template slot="title">Totally anonymous</template>
+              <template slot="body">Your boss will never find out that you're the person who quit. Well until you stop showing up for work, then they'll know.</template>
+            </feature-section>
+          </with-entered-viewport>
 
-          <feature-section icon="currency">
-            <template slot="title">Free for quitters</template>
-            <template slot="body">We send the bill to your next employer, not to you. Unless you don't already have another job lined up, then we'll send it to you.</template>
-          </feature-section>
+          <with-entered-viewport v-slot="{ entered }">
+            <feature-section icon="currency" class="slide-in-from-left" :class="{'slide-in-end': entered}">
+              <template slot="title">Free for quitters</template>
+              <template slot="body">We send the bill to your next employer, not to you. Unless you don't already have another job lined up, then we'll send it to you.</template>
+            </feature-section>
+          </with-entered-viewport>
 
           <div class="relative my-16 pl-8">
             <span class="absolute text-5xl text-indigo-500 opacity-25 top-0 left-0 -ml-10 -mt-4">
@@ -61,6 +69,7 @@
 import DemoLayout from "@/components/DemoLayout.vue"
 import HeroSection from "@/components/HeroSection.vue"
 import FeatureSection from "@/components/FeatureSection.vue"
+import WithEnteredViewport from "@/components/WithEnteredViewport.vue"
 
 export default {
   name: "LandingPage",
@@ -68,6 +77,7 @@ export default {
     DemoLayout,
     HeroSection,
     FeatureSection,
+    WithEnteredViewport,
   }
 }
 </script>
